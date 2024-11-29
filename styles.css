@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.home {
+    margin-top: 50px;
+}
+.timer {
+    font-size: small;
+}
+.image img {
+    cursor: pointer;
+}
+.engines {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.engines a {
+    margin: 0 10px;
+    text-transform: uppercase;
+}
