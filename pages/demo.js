@@ -20,21 +20,19 @@ function load() {
 function setup() {
     var elm = document.getElementsByClassName("remove");
     for (var i = 0; i < elm.length; i++) {
-        elm[i].addEventListener('click', function () {            
-            if (this.parentNode.childElementCount == 2)
-            {
+        elm[i].addEventListener('click', function () {
+            if (this.parentNode.childElementCount == 2) {
                 // Remove image div
                 this.parentNode.parentNode.removeChild(this.parentNode);
             }
-            else
-            {
+            else {
                 // Remove the first image in div
                 this.parentNode.removeChild(this.parentNode.childNodes[0]);
                 // Prevents the image click event to fire
                 event.stopPropagation();
             }
-            
-            
+
+
         }, false);
     }
 }
@@ -44,13 +42,13 @@ function registerHandlers() {
     var links = document.getElementsByTagName('a');
     var len = links.length;
 
-    for (var i = 0; i < len-1; i++) {
+    for (var i = 0; i < len - 1; i++) {
         links[i].onclick = generateHandler(i);
     }
 
     function generateHandler(index) {
         return function () {
-            alert(index+1);
+            //alert(index + 1);
             return false;
         }
     }

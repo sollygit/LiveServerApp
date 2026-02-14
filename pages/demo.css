@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 40px;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    margin: 20px 0;
+}
+
+.timer {
+    font-size: small;
+    margin: 3px;
+    padding: 3px;
+}
+
+.image img {
+    cursor: pointer;
+}
+
+.engines {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.engines a {
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

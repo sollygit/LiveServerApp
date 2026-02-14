@@ -1,15 +1,8 @@
 var Functions = (function () {
-    
-    // private
-    function average(a, b) {
-        return (a + b) / 2.0;
-    }
 
-    // public
+    calcAvg = (a, b) => (a + b) / 2.0;
+
     return {
-        Average: function (a, b) {
-            return average(a, b);
-        }
-    };
-
+        CalcAvg: (a, b) => calcAvg(a, b)
+    }
 })();

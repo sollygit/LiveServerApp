@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Static App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="functions.js"></script>
 </head>
 
 <body onload="onload()">
     <h3>Live Server</h3>
-    <div>Click [F12] for the console output</div>
+    <button onclick="location.reload()">Reload</button>
+    <button onclick="window.location.href = 'pages/demo.html'">Demo</button>
+    <hr>
     <ul>
-        <li><a href="pages/demo.html">HTML Demo</a></li>
+        <li id="person"></li>
+        <li id="average"></li>
     </ul>
 </body>
 

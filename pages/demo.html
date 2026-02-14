@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Demo</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Demo</title>
+    <link rel="stylesheet" href="demo.css">
     <script type="text/javascript" src="demo.js"></script>
 </head>
 
 <body onload="load()">
-    <h3>HTML Demo</h3>
+    <h3>Demo</h3>
+    <div class="home">
+        <button onclick="window.location.href = '/index.html'">Home</button>
+    </div>
     <div id="one" class="image">
         <img src="../images/one.jpg" alt="One">
         <button class="remove">X</button>
@@ -19,17 +22,17 @@
         <img src="../images/two.jpg" alt="Two">
         <button class="remove">X</button>
     </div>
+    <hr>
     <div class="engines">
         <a href="www.yahoo.com">Yahoo!</a>
         <a href="www.bing.com">Bing</a>
         <a href="www.google.com">Google</a>
     </div>
+    <hr>
     <div>
         <button onclick="getTime()">Time</button>
+        <button onclick="location.reload()">Reload</button>
         <div id="time" class="timer"></div>
-    </div>
-    <div class="home">
-        <a href="../index.html">← Back</a>
     </div>
 </body>
 
