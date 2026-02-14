@@ -26,8 +26,21 @@ a:hover {
     padding: 3px;
 }
 
+.images {
+    display: inline-block;
+    padding: 5px;
+}
+
 .image img {
     cursor: pointer;
+    margin: 2px;
+    padding: 2px;
+}
+
+.remove {
+    position: absolute;
+    left: 40px;
+    background: red;
 }
 
 .engines {
